@@ -1,0 +1,9 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+    exception_controller: null
+    paths:
+        '%kernel.project_dir%/assets/images/hos_2020_01_15': hos_images_2020_01_15
+        '%kernel.project_dir%/assets/images/hos': hos_images
+        '%kernel.project_dir%/assets/images/epremiera': epremiera_images
