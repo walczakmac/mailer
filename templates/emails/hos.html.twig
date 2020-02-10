@@ -10,6 +10,46 @@
         a.color-active-white {
             color: #fff;
         }
+        a.box-link.name {
+            margin-bottom: 5px;
+        }
+        a.box-link.position {
+            margin-bottom: 5px;
+        }
+        a.box-link {
+            display: block;
+            text-decoration: none;
+            color: #000;
+            font-size: 7px;
+            line-height: 1;
+        }
+        a.orange.box-link {
+            font-size: 13px;
+            color: #ff671d;
+        }
+        table.box-row {
+            background-color: #efefef;
+        }
+        table.box {
+            background-color: #efefef;
+            padding: 10px;
+        }
+        td.text {
+            vertical-align: bottom;
+            background-color: #fff;
+            padding: 0 5px 5px;
+        }
+        td.photo img {
+            width: 120px;
+            display: block;
+            max-width: 120px;
+        }
+        td.box-header {
+            color: #ff671d;
+            font-size: 12px;
+            padding-bottom: 10px;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -69,21 +109,60 @@
         </tr>
         <tr>
             <td>
-                <table cellpadding="0" cellspacing="0">
+                <table cellpadding="0" cellspacing="0" class="box-row">
                     <tr>
-                        <td>
-                            <a href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-ewy-szymalkowskiej/"
-                               target="_blank">
-                                <img src="{{ email.image('@hos_images/p1.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="280"
-                                     style="width: 280px;"/>
-                            </a>
+                        <td style="vertical-align: top;">
+                            <table cellspacing="0" cellpadding="0" border="0" class="box">
+                                <tr>
+                                    <td class="text">
+                                        <a class="box-link orange name" href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-ewy-szymalkowskiej/" target="_blank">
+                                            Ewa Szymałkowska
+                                        </a>
+                                        <a class="box-link position" href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-ewy-szymalkowskiej/" target="_blank">
+                                            Kierownik działu szkoleń
+                                        </a>
+                                        <a class="box-link place" href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-ewy-szymalkowskiej/" target="_blank">
+                                            Uniqa Towarzystwo Ubezpieczeń
+                                        </a>
+                                        <a class="box-link description" href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-ewy-szymalkowskiej/" target="_blank">
+                                            Od kilkunastu lat pracuje w obszarze HR w międzynarodowych korporacjach różnych branż. Przygotowywała i wdrażała akademie rozwoju liderów, marketingu, ale także dla przedsiębiorców będącymi partnerami biznesowymi.
+                                        </a>
+                                    </td>
+                                    <td class="photo">
+                                        <a href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-ewy-szymalkowskiej/" target="_blank">
+                                            <img src="{{ email.image('@hos_images/HOS_NEWL_10_12_03.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="120" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                         <td>
-                            <a href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-henryka-puszcza/"
-                               target="_blank">
-                                <img src="{{ email.image('@hos_images/p2.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="280"
-                                     style="max-width:100% !important"/>
-                            </a>
+                            <table cellspacing="0" cellpadding="0" border="0" class="box">
+                                <tr>
+                                    <td colspan="2" class="box-header">
+                                        Jakimi wartościami kierują się dziś menedżerowie, które kiedyś były mniej istotne?
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text">
+                                        <a class="box-link orange name" href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-henryka-puszcza/" target="_blank">
+                                            Henryk Puszcz
+                                        </a>
+                                        <a class="box-link position" href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-henryka-puszcza/" target="_blank">
+                                            Przewodniczący rady nadzorczej /<br>
+                                            senior partner House of Skills
+                                        </a>
+                                        <a class="box-link description" href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-henryka-puszcza/" target="_blank">
+                                            Od ponad 20 lat aktywnie działa w branży edukacji menadżerów. Jest autorem unikatowych projektów rozwojowych dla klientów House of Skills, których celem jest podnoszenie jakości przywództwa w ich organizacjach. W pracy projektowej wykorzystuje osobiste wielkoletnie doświadczenie zarządzania firmą, wynikające z pełnionych wcześniej funkcji zarządowych.
+                                        </a>
+                                    </td>
+                                    <td class="photo">
+                                        <a href="https://www.houseofskills.pl/strefawiedzy/film/jakimi-wartosciami-kieruja-sie-dzis-menedzerowie-ktore-kiedys-byly-mniej-istotne-opinia-henryka-puszcza/" target="_blank">
+                                            <img src="{{ email.image('@hos_images/HOS_NEWL_10_12_06.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="120" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
@@ -94,21 +173,56 @@
         </tr>
         <tr>
             <td>
-                <table cellpadding="0" cellspacing="0">
+                <table cellpadding="0" cellspacing="0" class="box-row">
                     <tr>
-                        <td>
-                            <a href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-milczarek/"
-                               target="_blank">
-                                <img src="{{ email.image('@hos_images/p3.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="280"
-                                     style="width: 280px;max-width:100% !important"/>
-                            </a>
+                        <td style="vertical-align: top;">
+                            <table cellspacing="0" cellpadding="0" border="0" class="box">
+                                <tr>
+                                    <td colspan="2" class="box-header">
+                                        Co pracownicy muszą wiedzieć i umieć, czego nie potrzebowali 25 lat temu?
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text">
+                                        <a class="box-link orange name" href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-milczarek/" target="_blank">
+                                            Małgorzata Milczarek
+                                        </a>
+                                        <a class="box-link position" href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-milczarek/" target="_blank">
+                                            Human Resources Director
+                                        </a>
+                                        <a class="box-link description" href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-milczarek/" target="_blank">
+                                            Posiada szerokie doświadczenie związane z zarządzaniem ludźmi zdobyte w organizacjach różnych branż: farmaceutycznej, spożywczej, energetycznej, fmcg, przemysłowej oraz szkoleniowej. W trakcie swojej kariery była odpowiedzialna m.in. za budowanie kultury organizacyjnej, kształtowanie polityki wynagrodzeń, budowanie zaangażowania i rozwój pracowników.
+                                        </a>
+                                    </td>
+                                    <td class="photo">
+                                        <a href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-milczarek/" target="_blank">
+                                            <img src="{{ email.image('@hos_images/HOS_NEWL_10_12_11.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="120" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
-                        <td>
-                            <a href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-majcherczyk/"
-                               target="_blank">
-                                <img src="{{ email.image('@hos_images/p4a_03.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="280"
-                                     style="width: 280px;max-width:100% !important"/>
-                            </a>
+                        <td style="vertical-align: top;">
+                            <table cellspacing="0" cellpadding="0" border="0" class="box">
+                                <tr>
+                                    <td class="text">
+                                        <a class="box-link orange name" href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-majcherczyk/" target="_blank">
+                                            Małgorzata Majcherczyk
+                                        </a>
+                                        <a class="box-link position" href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-majcherczyk/" target="_blank">
+                                            Partner House of Skills
+                                        </a>
+                                        <a class="box-link description" href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-majcherczyk/" target="_blank">
+                                            Posiada szerokie doświadczenie zdobyte w różnych dziedzinach: począwszy od finansów przez planowanie strategiczne, zarządzanie szkoleniami i rozwojem pracowników, aż po projektowanie i wdrażanie systemów zarządzania ludźmi. W House of Skills odpowiedzialna za produkty i narzędzia wspomagające ocenę i rozwój pracowników, zwłaszcza zarządzanie talentami.
+                                        </a>
+                                    </td>
+                                    <td class="photo">
+                                        <a href="https://www.houseofskills.pl/strefawiedzy/film/co-pracownicy-musza-wiedziec-i-umiec-czego-nie-potrzebowali-25-lat-temu-opinia-malgorzaty-majcherczyk/" target="_blank">
+                                            <img src="{{ email.image('@hos_images/HOS_NEWL_10_12_14.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="120" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
@@ -119,21 +233,56 @@
         </tr>
         <tr>
             <td>
-                <table cellpadding="0" cellspacing="0">
+                <table cellpadding="0" cellspacing="0" class="box-row">
                     <tr>
                         <td>
-                            <a href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-wojciecha-lorenca/"
-                               target="_blank">
-                                <img src="{{ email.image('@hos_images/p5.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="280"
-                                     style="width: 280px;max-width:100% !important"/>
-                            </a>
+                            <table cellspacing="0" cellpadding="0" border="0" class="box">
+                                <tr>
+                                    <td colspan="2" class="box-header">
+                                        Jak zmieniły się standardy przywództwa w ciągu ostatnich 25 lat?
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text">
+                                        <a class="box-link orange name" href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-wojciecha-lorenca/" target="_blank">
+                                            Wojciech Lorenc
+                                        </a>
+                                        <a class="box-link position" href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-wojciecha-lorenca/" target="_blank">
+                                            Dyrektor zarządzający obszarem HR
+                                        </a>
+                                        <a class="box-link description" href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-wojciecha-lorenca/" target="_blank">
+                                            Posiada ponad dwudziestoletnie doświadczenie w obszarze wdrażania i budowania polityki HR w organizacjach. Był m.im Dyrektorem Wykonawczym HR w Banku Pekao, PKN Orlen, CEPD NV Group, oraz konsultantem w KPMG. Obecnie jest odpowiedzialny za zarządzanie kryzysowe oraz prowadzenie programów restrykcyjnych i retencyjnych.
+                                        </a>
+                                    </td>
+                                    <td class="photo">
+                                        <a href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-wojciecha-lorenca/" target="_blank">
+                                            <img src="{{ email.image('@hos_images/HOS_NEWL_10_12_19.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="120" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
-                        <td>
-                            <a href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-eksperta-house-of-skills-piotr-gryko/"
-                               target="_blank">
-                                <img src="{{ email.image('@hos_images/p6.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="280"
-                                     style="width: 280px;max-width:100% !important"/>
-                            </a>
+                        <td style="vertical-align: top;">
+                            <table cellspacing="0" cellpadding="0" border="0" class="box">
+                                <tr>
+                                    <td class="text">
+                                        <a class="box-link orange name" href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-eksperta-house-of-skills-piotr-gryko/" target="_blank">
+                                            Piotr Gryka
+                                        </a>
+                                        <a class="box-link position" href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-eksperta-house-of-skills-piotr-gryko/" target="_blank">
+                                            Senior partner House of Skills
+                                        </a>
+                                        <a class="box-link description" href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-eksperta-house-of-skills-piotr-gryko/" target="_blank">
+                                            Ekonomiczne wykształcenie połączeniu z wieloletnim doświadczeniem powoduje, że znakomicie rozumie trendy rynkowe, modele i wskaźniki biznesowe. Swoja wiedze fachową buduje przez szeroką siec kontaktów z firmami i ekspertami na całym świecie. W House of Skills merytoryczne specjalizuje się w strategicznych aspektach zarządzania organizacją.
+                                        </a>
+                                    </td>
+                                    <td class="photo">
+                                        <a href="https://www.houseofskills.pl/strefawiedzy/film/jak-zmienily-sie-standardy-przywodztwa-w-ciagu-ostatnich-25-lat-opinia-eksperta-house-of-skills-piotr-gryko/" target="_blank">
+                                            <img src="{{ email.image('@hos_images/HOS_NEWL_10_12_22.jpg') }}" alt="kliknij, aby zobaczyć obrazek" width="120" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                 </table>
@@ -274,7 +423,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" align="right" style="background:#75777a;color:white;font-family: Arial;padding:20px;font-size: 12px;">
+                        <td colspan="2" align="right" style="background:#75777a;color:white;font-family: Arial;font-size: 12px;">
                             <br/>
                             <a href="mailto:?subject=Do%C5%9Bwiadczenie,%20kt%C3%B3re%20zmienia&body=Witaj,%20Polecam%20Stref%C4%99%20Wiedzy%20prowadzon%C4%85%20przez%20ekspert%C3%B3w%20z%20House%20of%20Skills.%20Pod%20adresem:%20https://www.houseofskills.pl/%20znajdziesz%20wiele%20artyku%C5%82%C3%B3w%20eksperckich,%20jak%20r%C3%B3wnie%C5%BC%20propozycj%C4%99%20szkole%C5%84%20z%20r%C3%B3%C5%BCnych%20obszar%C3%B3w.%0DMasz%20te%C5%BC%20mo%C5%BCliwo%C5%9B%C4%87%20zapisania%20si%C4%99%20do%20newslettera:%20https://www.houseofskills.pl/newsletter-ktory-zmienia.">
                                 <img src="{{ email.image('@hos_images/share.gif') }}" alt="nacisnij, aby zobaczyć obrazek" />

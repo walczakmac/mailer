@@ -4,7 +4,6 @@ namespace App\Command;
 
 use Symfony\Bridge\Twig\Mime\BodyRenderer;
 use Symfony\Bridge\Twig\Mime\TemplatedEmail;
-use Symfony\Bridge\Twig\Mime\WrappedTemplatedEmail;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -22,7 +21,7 @@ class MailerHosNewsletterSendCommand extends Command
     private $gmailUsername;
     private $gmailPassword;
 
-    public function __construct(Environment $twig, $gmailUsername, $gmailPassword)
+    public function __construct(Environment $twig, string $gmailUsername, string $gmailPassword)
     {
         parent::__construct(null);
 
@@ -46,21 +45,23 @@ class MailerHosNewsletterSendCommand extends Command
         $mailer = new Mailer($transport);
 
         $email = (new TemplatedEmail())
-            ->from('walczak.mac@gmail.com')
+            ->from('mwalczak@internationalfx.com')
 
             ->to(
                 'walczak.mac@gmail.com',
                 'magdalena.walczuk@agencjahagen.pl',
-                'mwalczak@internationalfx.com'
+                'walczukmagda@wp.pl',
+//                'mwalczak@ifxpayments.com',
+                'joanna.zoltkowska@agencjahagen.pl'
             )
 
             ->subject('HoS newsletter')
-            ->htmlTemplate('emails/hos_2020_01_15.html.twig')
+            ->htmlTemplate('emails/hos_feb_2020.html.twig')
         ;
 
-        $content = $this->twig->render('emails/hos.html.twig', [
-            'email' => new WrappedTemplatedEmail($this->twig, $email)
-        ]);
+//        $content = $this->twig->render('emails/hos.html.twig', [
+//            'email' => new WrappedTemplatedEmail($this->twig, $email)
+//        ]);
 
         $renderer = new BodyRenderer($this->twig);
         // this updates the $email object contents with the result of rendering

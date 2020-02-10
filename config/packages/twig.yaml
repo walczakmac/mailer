@@ -6,4 +6,5 @@ twig:
     paths:
         '%kernel.project_dir%/assets/images/hos_2020_01_15': hos_images_2020_01_15
         '%kernel.project_dir%/assets/images/hos': hos_images
+        '%kernel.project_dir%/assets/images/hos_feb_2020': hos_feb_2020
         '%kernel.project_dir%/assets/images/epremiera': epremiera_images
